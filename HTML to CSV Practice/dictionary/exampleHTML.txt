@@ -1,0 +1,9 @@
+<html> open tag
+	<div class="stfu"> tag with attribute
+		<h2 class="coffee"><h3> </h3></h2> multiple tags
+		<p> value </p> open and closing tag on same line
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,bold,italic
+		"> tag that is incomplete
+	</div>
+</html> closing tag

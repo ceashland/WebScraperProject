@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 import architexture.Tag;
+import gfx.frame.Frame;
 import main.dictionaries.DictionaryReader;
 import main.dictionaries.LanguageDictionary;
 
@@ -13,71 +14,9 @@ import java.net.MalformedURLException;
 public class Main {
 
 	public static void main(String[] args) throws IOException{
-		boolean testing = false;
+		boolean testing = true;
 		if(testing == true) {
-		//	System.out.println());
-			
-			
-			
-			//readWebsite("<test vari=\"Testes\"> yo wtf is this shit yo </test>");
-			
-		StringBuilder sbTest = new StringBuilder();
-		/*
-		String newLine = "\n";
-		String concatString = "ello this is the strin";
-		System.out.println("concatString.Length ="+concatString.length()); //length = 22
-		System.out.println("sbTest.Length = " + sbTest.length()); // length = 0;
-		sbTest.append("Hg");
-		sbTest.insert(1, newLine);
-		System.out.println("sbTest.Length = " + sbTest.length()); //length = 2
-		sbTest.insert(1, newLine);
-		System.out.println("sbTest = " + sbTest.toString());
-		
-			//System.out.println("Working Directory = " + System.getProperty("user.dir"));
-		*/
-		//System.out.println("3/2 = " +((float)3/(float)2));
-		
-		String[] tagNames = new String[0];
-		String[] tagAttributes = new String[0];
-		String[] tagAttributesValues = new String[0];
-		String line; //= "<h2 class=\"coffee\"  id=\"testID\"><h3> test this is a test is it working ?</h3></h2>";
-		//System.out.println("<parent2 id=\"testing\">");
-		
-		line = "<parent1>\r\n" + 
-				"\r\n" + 
-				"	<parent2 class=\"tested\" id=\"testing\" >\n" + 
-				"		<parent3>\n" + 
-				"			<child1>Content content contextual content.</child1>\n" + 
-				"			</child2>\n" + 
-				"		</parent3>\n" + 
-				"\n" + 
-				"		<parent4>\n" + 
-				"			<child4></child4>\n" + 
-				"			</child5>\n" + 
-				"			<child6></child6>\n" + 
-				"		</parent4>\n" + 
-				"	</parent2>\n" + 
-				"</parent1>";
-		//Tag[] tempArry = readMultipleTags(line);
-		
-		System.out.println("---Reading tempTagCollection---");
-		if(Tag.tempTagCollection != null)
-		for(int i = 0; i < Tag.tempTagCollection.size(); i ++) {
-			System.out.println(Tag.tempTagCollection.get(i).toString());
-		}
-		
-		System.out.println("---Reding Hierarchy ---");
-		Tag.PrintHierarchy();
-		/*System.out.println("---Test Scan ---");
-		for(int i = Tag.tempTagCollection.size()-1; i >= 0; i-- ) {
-			System.out.println(i);
-		}*/
-		
-		//System.out.println("testing");
-		//if(tagNames != null)
-		
-		
-		
+			Frame frame = new Frame("Testes", 300,300);
 		}else{
 		DictionaryReader dr = new DictionaryReader("./dictionary/htmlDictonary.txt");
 		String[][] htmlDict = dr.outputDictionary();

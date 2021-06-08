@@ -16,7 +16,7 @@ public class Main {
 	public static void main(String[] args) throws IOException{
 		boolean testing = true;
 		if(testing == true) {
-			Frame frame = new Frame("Testes", 300,300);
+			Frame frame = new Frame("Tested", 300,300);
 		}else{
 		DictionaryReader dr = new DictionaryReader("./dictionary/htmlDictonary.txt");
 		String[][] htmlDict = dr.outputDictionary();

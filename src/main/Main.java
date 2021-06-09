@@ -26,7 +26,7 @@ public class Main {
 			//System.out.println(htmlDict[i]);
 		//}
 		
-		String classToLookFor = "icl-u-xs-my--none jobsearch-ReqAndQualSection-item--closedBullets";
+		//I just got rid of a line that has a weird class to look for. Crazy right?!
 		
 		
 		//Code comes accross a "<" without the quotes and the tag type is totally different

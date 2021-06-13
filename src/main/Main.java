@@ -16,7 +16,8 @@ public class Main {
 	public static void main(String[] args) throws IOException{
 		boolean testing = true;
 		if(testing == true) {
-			Frame frame = new Frame("Tested", 300,300);
+			System.out.println("width/3 = " + (500/3) + "| height/3 = " + (300/3) );
+			Frame frame = new Frame("Tested", 500,300);
 		}else{
 		DictionaryReader dr = new DictionaryReader("./dictionary/htmlDictonary.txt");
 		String[][] htmlDict = dr.outputDictionary();
@@ -26,7 +27,7 @@ public class Main {
 			//System.out.println(htmlDict[i]);
 		//}
 		
-		String classToLookFor = "icl-u-xs-my--none jobsearch-ReqAndQualSection-item--closedBullets";
+		//I just got rid of a line that has a weird class to look for. Crazy right?!
 		
 		
 		//Code comes accross a "<" without the quotes and the tag type is totally different

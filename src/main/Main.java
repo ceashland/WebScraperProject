@@ -14,10 +14,10 @@ import java.net.MalformedURLException;
 public class Main {
 
 	public static void main(String[] args) throws IOException{
-		boolean testing = true;
+		boolean testing = false;
 		if(testing == true) {
 			System.out.println("width/3 = " + (500/3) + "| height/3 = " + (300/3) );
-			Frame frame = new Frame("Tested", 500,300);
+			Frame frame = new Frame("Web Scraper", 800,500);
 		}else{
 		DictionaryReader dr = new DictionaryReader("./dictionary/htmlDictonary.txt");
 		String[][] htmlDict = dr.outputDictionary();
@@ -208,7 +208,7 @@ public class Main {
 		       // } 
 		    } 
 		  
-		
+		Frame frame = new Frame("Web Scraper", 800,500);
 	}
 	
 }
@@ -889,6 +889,9 @@ public class Main {
 				if(ld.findStructureCodeInDictonary(currentTag.type) == 2) {
 				isSpecialTag = true;
 					System.out.println("setting isSpecialTag = " + isSpecialTag);
+				}else if(ld.findStructureCodeInDictonary(currentTag.type) == 0) {
+					currentTag.setOpen(false);
+					currentTag.setIsParent(false);
 				}
 				}
 			}else {
@@ -983,6 +986,7 @@ public class Main {
 		System.out.println("current = " + current);
 		System.out.println("Done reading site" + "| tagcount = " + Tag.tempTagCollection.size());
 		Tag.PrintHierarchy();
+		Tag.generateSite();
 		//Step 2 figure out how many tags in a chunk
 		
 		//Step 3 create collection of tags

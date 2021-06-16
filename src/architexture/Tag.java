@@ -65,6 +65,15 @@ public class Tag {
 		}
 	}
 	
+	public static void generateSite() {
+		if(tempTagCollection!= null) {
+			site = new Tag[tempTagCollection.size()]; 
+			for(int i = 0; i < tempTagCollection.size(); i++) {
+				site[i] = tempTagCollection.get(i);
+			}
+		}
+	}
+	
 	public static ArrayList<String>[] correctAttributes(String str) {
 		
 		ArrayList<String>[] temp = null;
@@ -192,6 +201,7 @@ public boolean isParent() {
 public void setIsParent(boolean isParent) {
 	this.isParent = isParent;
 
+	if(children != null)
 	this.tabCount = this.parent.tabCount+1;
 }
 
